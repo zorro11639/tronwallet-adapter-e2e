@@ -1,0 +1,8 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "include": ["tron/**/*.ts"],
+    "references": [{ "path": "tron/e2e-shared" }]
+}

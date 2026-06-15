@@ -1,0 +1,43 @@
+{
+    "name": "@tronweb3/tronwallet-adapter-e2e-shared",
+    "version": "0.0.1",
+    "description": "Internal Playwright E2E scaffold for TRON wallet adapters. Workspace-only; not published.",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./lib/index.d.ts",
+            "import": "./lib/index.js"
+        },
+        "./page": {
+            "types": "./lib/page/harness.d.ts",
+            "import": "./lib/page/harness.js"
+        },
+        "./specs": {
+            "types": "./lib/specs/index.d.ts",
+            "import": "./lib/specs/index.js"
+        },
+        "./config": {
+            "types": "./lib/config/index.d.ts",
+            "import": "./lib/config/index.js"
+        }
+    },
+    "files": [
+        "src",
+        "lib"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch"
+    },
+    "dependencies": {
+        "@playwright/test": "1.49.1"
+    },
+    "devDependencies": {
+        "tronweb": "^6.3.0",
+        "typescript": "^5.0.0",
+        "vite": "6.4.2",
+        "vite-plugin-node-polyfills": "0.24.0"
+    }
+}
