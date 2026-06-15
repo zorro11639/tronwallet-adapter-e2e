@@ -85,7 +85,7 @@ Each wallet has two Playwright projects:
 
 ## Prerequisites
 
--   Node.js 20.18.0, pnpm 9.6.0 (pinned via `.nvmrc` and the `packageManager` field — run `nvm use` in the `e2e/` root)
+-   Node.js 22.17.0, pnpm 10.9.2 (pinned via `.nvmrc` and the `packageManager` field — run `nvm use` in the `e2e/` root)
 -   Chrome with the target wallet extension installed (the setup script copies it from your Chrome profile)
 -   An unused TRON seed phrase for the test profile — **do not use a production wallet**
 
@@ -173,11 +173,11 @@ pnpm --filter ./tron/tronlink e2e:page
 cd tron/<walletId>      # e.g. cd tron/tronlink
 
 pnpm e2e                                  # full suite
-pnpm e2e -- --grep "connect"              # filter by test name
-pnpm e2e -- --grep "E2E-SEC"             # security tests only
+pnpm e2e --grep "connect"              # filter by test name
+pnpm e2e --grep "E2E-SEC"             # security tests only
 pnpm e2e -- tests/security.spec.ts        # single spec file
-pnpm e2e -- --project with-extension      # specific Playwright project
-pnpm e2e -- --project without-extension
+pnpm e2e --project with-extension      # specific Playwright project
+pnpm e2e --project without-extension
 
 pnpm e2e:page                             # serve harness page without Playwright
 ```
@@ -188,16 +188,16 @@ The HTML report is written to `<walletDir>/e2e/playwright-report/` after every r
 
 All wallets share a single `tron/.env`. Wallet-specific overrides (if any) go in `tron/<walletId>/e2e/.env`.
 
-| Variable                 | Default                              | Description                                                          |
-| ------------------------ | ------------------------------------ | -------------------------------------------------------------------- |
-| `WALLET_PASSWORD`        | _(empty)_                            | Password used to unlock the test Chromium profile.                                            |
-| `E2E_WALLETS_DIR`        | `./e2e-data`                         | Base dir for per-wallet data; each wallet's extension files and Chromium profile live under `$E2E_WALLETS_DIR/<walletId>/` (resolved relative to `tron/`). |
-| `TEST_CHAIN_ID`          | `0x94a9059e`                         | Target TRON chain id (`0x94a9059e` Shasta · `0xcd8690dc` Nile · `0x2b6653dc` Mainnet).        |
-| `TRON_FULL_HOST`         | `https://nile.trongrid.io`           | TronGrid `fullHost` used by the harness to build test transactions.                           |
-| `TEST_RECEIVER_ADDRESS`  | `TYukBQZ2XXCcRCReAUguyXncCWNY9CEiDQ` | Base58 address that receives the test transfer.                                               |
-| `TEST_VALUE_SUN`         | `1000`                               | Transfer amount in sun (1 TRX = 1 000 000 sun).                                               |
-| `TEST_UNKNOWN_CHAIN_ID`  | `0xdeadbeef`                         | Used by the negative `switchChain` test.                                                      |
-| `WALLET_ADAPTERS_PATH`   | _(empty)_                            | Optional local path to the `tronwallet-adapters` source for development testing.              |
+| Variable                | Default                    | Description                                                                                                                                                |
+| ----------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `WALLET_PASSWORD`       | _(empty)_                  | Password used to unlock the test Chromium profile.                                                                                                         |
+| `E2E_WALLETS_DIR`       | `./e2e-data`               | Base dir for per-wallet data; each wallet's extension files and Chromium profile live under `$E2E_WALLETS_DIR/<walletId>/` (resolved relative to `tron/`). |
+| `TEST_CHAIN_ID`         | `0x94a9059e`               | Target TRON chain id (`0x94a9059e` Shasta · `0xcd8690dc` Nile · `0x2b6653dc` Mainnet).                                                                     |
+| `TRON_FULL_HOST`        | `https://nile.trongrid.io` | TronGrid `fullHost` used by the harness to build test transactions.                                                                                        |
+| `TEST_RECEIVER_ADDRESS` | -                          | Base58 address that receives the test transfer.                                                                                                            |
+| `TEST_VALUE_SUN`        | `1000`                     | Transfer amount in sun (1 TRX = 1 000 000 sun).                                                                                                            |
+| `TEST_UNKNOWN_CHAIN_ID` | `0xdeadbeef`               | Used by the negative `switchChain` test.                                                                                                                   |
+| `WALLET_ADAPTERS_PATH`  | _(empty)_                  | Optional local path to the `tronwallet-adapters` source for development testing.                                                                           |
 
 ## Local Adapter Development
 
