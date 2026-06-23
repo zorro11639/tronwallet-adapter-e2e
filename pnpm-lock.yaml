@@ -22,8 +22,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -44,8 +44,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -66,8 +66,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -88,8 +88,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -103,8 +103,8 @@ importers:
   tron/e2e-shared:
     dependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
     devDependencies:
       tronweb:
         specifier: ^6.3.0
@@ -129,8 +129,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -151,8 +151,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -173,8 +173,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -195,8 +195,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -217,8 +217,30 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
+      '@tronweb3/tronwallet-adapter-e2e-shared':
+        specifier: workspace:^
+        version: link:../e2e-shared
+      vite:
+        specifier: 6.4.2
+        version: 6.4.2(@types/node@22.7.5)(tsx@4.21.0)
+      vite-plugin-node-polyfills:
+        specifier: 0.24.0
+        version: 0.24.0(rollup@4.59.0)(vite@6.4.2(@types/node@22.7.5)(tsx@4.21.0))
+
+  tron/safepal:
+    dependencies:
+      '@tronweb3/tronwallet-abstract-adapter':
+        specifier: ^1.1.13
+        version: 1.1.13
+      '@tronweb3/tronwallet-adapters':
+        specifier: ^1.2.25
+        version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
+    devDependencies:
+      '@playwright/test':
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -239,8 +261,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -261,8 +283,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -283,8 +305,8 @@ importers:
         version: 1.2.25(@types/react@19.2.14)(react@18.3.1)(typescript@5.9.3)(zod@3.22.4)
     devDependencies:
       '@playwright/test':
-        specifier: 1.49.1
-        version: 1.49.1
+        specifier: 1.55.1
+        version: 1.55.1
       '@tronweb3/tronwallet-adapter-e2e-shared':
         specifier: workspace:^
         version: link:../e2e-shared
@@ -772,8 +794,8 @@ packages:
     resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@playwright/test@1.49.1':
-    resolution: {integrity: sha512-Ky+BVzPz8pL6PQxHqNRW1k3mIyv933LML7HktS8uik0bUXNCdPhoS/kLihiO1tMf/egaJb4IutXd7UywvXEW+g==}
+  '@playwright/test@1.55.1':
+    resolution: {integrity: sha512-IVAh/nOJaw6W9g+RJVlIQJ6gSiER+ae6mKQ5CX1bERzQgbC1VSeBlwdvczT7pxb0GWiyrxH4TGKbMfDb4Sq/ig==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -980,6 +1002,10 @@ packages:
 
   '@tronweb3/tronwallet-abstract-adapter@1.1.13':
     resolution: {integrity: sha512-Sv1FUo5A1fNgc2oZ2LMJ7SmA5TpW5MSWTNjnWJ8t6Z+aRfLbc/s8nkPPLqm0YfR+Sa80sLhMfqJsJzYf73ynMg==}
+    engines: {node: '>=16', pnpm: '>=7'}
+
+  '@tronweb3/tronwallet-abstract-adapter@1.2.0':
+    resolution: {integrity: sha512-Xy3ftKnxhEEWOWG6OXoN877t4oTr4W/kuQb7LWVYdn5PNeQ90LXj7eaTu9e6624iozDRuxMix5FThtqEt5F7dA==}
     engines: {node: '>=16', pnpm: '>=7'}
 
   '@tronweb3/tronwallet-adapter-backpack@1.0.0':
@@ -2923,7 +2949,7 @@ snapshots:
 
   '@noble/hashes@1.8.0': {}
 
-  '@playwright/test@1.49.1':
+  '@playwright/test@1.55.1':
     dependencies:
       playwright: 1.55.1
 
@@ -3324,6 +3350,15 @@ snapshots:
       - debug
       - utf-8-validate
 
+  '@tronweb3/tronwallet-abstract-adapter@1.2.0':
+    dependencies:
+      eventemitter3: 4.0.7
+      tronweb: 6.2.2
+    transitivePeerDependencies:
+      - bufferutil
+      - debug
+      - utf-8-validate
+
   '@tronweb3/tronwallet-adapter-backpack@1.0.0':
     dependencies:
       '@tronweb3/tronwallet-abstract-adapter': 1.1.13
@@ -3432,7 +3467,7 @@ snapshots:
       '@ledgerhq/hw-transport': 6.27.1
       '@ledgerhq/hw-transport-webhid': 6.27.1
       '@testing-library/jest-dom': 5.17.0
-      '@tronweb3/tronwallet-abstract-adapter': 1.1.13
+      '@tronweb3/tronwallet-abstract-adapter': 1.2.0
       buffer: 6.0.3
       eventemitter3: 5.0.4
       preact: 10.23.0
